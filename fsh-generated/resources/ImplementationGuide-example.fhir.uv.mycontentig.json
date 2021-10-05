@@ -1,0 +1,164 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "example.fhir.uv.mycontentig",
+  "url": "http://somewhere.org/fhir/uv/mycontentig/ImplementationGuide/example.fhir.uv.mycontentig",
+  "version": "0.1.0",
+  "name": "ExampleIG",
+  "title": "Example IG",
+  "status": "draft",
+  "packageId": "example.fhir.uv.mycontentig",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "Bundle/Example-Test"
+        },
+        "name": "Example-Test",
+        "description": "Example-Test",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Library/FHIRHelpers"
+        },
+        "name": "FHIRHelpers",
+        "description": "FHIRHelpers",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/Patient-Test"
+        },
+        "name": "Patient-Test",
+        "description": "Patient-Test",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Library/Test"
+        },
+        "name": "Test",
+        "description": "Test",
+        "exampleBoolean": true
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "background.html",
+          "title": "Background",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "changes.html",
+          "title": "Changes",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "license.html",
+          "title": "License",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "spec.html",
+          "title": "Spec",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2021+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "path-binary",
+        "value": "input/cql"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources"
+      },
+      {
+        "code": "path-resource",
+        "value": "fsh-generated/resources"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/examples"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/pagecontent"
+      },
+      {
+        "code": "path-pages",
+        "value": "fsh-generated/includes"
+      },
+      {
+        "code": "active-tables",
+        "value": "false"
+      },
+      {
+        "code": "apply-contact",
+        "value": "true"
+      },
+      {
+        "code": "apply-jurisdiction",
+        "value": "true"
+      },
+      {
+        "code": "apply-publisher",
+        "value": "true"
+      },
+      {
+        "code": "apply-version",
+        "value": "true"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
+      },
+      {
+        "code": "usage-stats-opt-out",
+        "value": "true"
+      },
+      {
+        "code": "autoload-resources",
+        "value": "true"
+      },
+      {
+        "code": "shownav",
+        "value": "true"
+      },
+      {
+        "code": "validation",
+        "value": "allow-any-extensions"
+      },
+      {
+        "code": "broken-links",
+        "value": "warning"
+      }
+    ]
+  }
+}

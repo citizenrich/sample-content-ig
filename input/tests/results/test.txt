@@ -1,0 +1,11 @@
+Running tests.
+Data path: /Users/richard/src/github.com/citizenrich/sample-content-ig/input/tests/Test
+Terminology path: /Users/richard/src/github.com/citizenrich/sample-content-ig/input/vocabulary/valueset
+Patient=Patient(id=Patient-Test)
+Gender=code
+Sex=female
+Initial Population=true
+Denominator=true
+Numerator=true
+
+elapsed: 5.352 seconds

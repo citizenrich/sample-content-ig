@@ -1,0 +1,33 @@
+id: example.fhir.uv.mycontentig
+# name: ddcc-vs
+name: ExampleIG
+status: draft
+version: 0.1.0
+fhirVersion: 4.0.1
+canonical: http://somewhere.org/fhir/uv/mycontentig
+
+copyrightYear: 2021+
+releaseLabel: ci-build
+title: "Example IG"
+
+parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
+  path-binary: input/cql
+  path-resource:
+    - input/resources
+    - fsh-generated/resources
+    - input/examples
+  path-pages:
+    - input/pagecontent
+    - fsh-generated/includes
+  active-tables: 'false'
+  apply-contact: 'true'
+  apply-jurisdiction: 'true'
+  apply-publisher: 'true'
+  apply-version: 'true'
+  show-inherited-invariants: 'false'
+  usage-stats-opt-out: 'true'
+  autoload-resources: 'true'
+  shownav: 'true'
+  # validation: [allow-any-extensions, no-broken-links]
+  validation: [allow-any-extensions]
+  broken-links: "warning"
