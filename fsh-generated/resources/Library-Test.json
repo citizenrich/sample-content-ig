@@ -13,7 +13,7 @@
   },
   "name": "Test",
   "version": "0.1.0",
-  "url": "http://somewhere.org/fhir/uv/mycontentig/Test",
+  "url": "http://somewhere.org/fhir/uv/mycontentig/Library/Test",
   "content": [
     {
       "id": "ig-loader-Test.cql"

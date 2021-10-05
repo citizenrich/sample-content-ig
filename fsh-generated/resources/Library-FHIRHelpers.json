@@ -13,7 +13,7 @@
   },
   "name": "FHIRHelpers",
   "version": "4.0.1",
-  "url": "https://intrahealth.github.io/simple-hiv-ig/Library/FHIRHelpers",
+  "url": "http://somewhere.org/fhir/uv/mycontentig/Library/FHIRHelpers",
   "content": [
     {
       "id": "ig-loader-FHIRHelpers.cql"
