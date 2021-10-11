@@ -70,8 +70,52 @@
       </reference>
       <name value="Dependency library example"/>
       <description value="A simple example showing use of a dependency library from an implementation guide dependency"/>
+    </resource> -->
+    <!-- <resource>
+      <reference>
+        <reference value="Bundle/Example-Test"/>
+      </reference>
+      <name value="Bundle/Example-Test"/>
+      <description value="A simple example showing how examples are defined and referenced"/>
+      <exampleCanonical value="http://somewhere.org/fhir/uv/myig/Bundle/Example-Test"/>
+    </resource> -->
+
+    <resource>
+      <reference>
+        <reference value="Library/FHIRHelpers"/>
+      </reference>
+      <name value="Library/FHIRHelpers"/>
+      <description value="A simple example showing how examples are defined and referenced"/>
+      <exampleCanonical value="http://somewhere.org/fhir/uv/myig/Library/FHIRHelpers"/>
     </resource>
-    -->
+
+    <resource>
+      <reference>
+        <reference value="Library/Test"/>
+      </reference>
+      <name value="Library/Test"/>
+      <description value="A simple example showing how examples are defined and referenced"/>
+      <exampleCanonical value="http://somewhere.org/fhir/uv/myig/Library/Test"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="Library/AgeRanges"/>
+      </reference>
+      <name value="AgeRanges"/>
+      <description value="A simple example showing how examples are defined and referenced"/>
+      <exampleCanonical value="http://somewhere.org/fhir/uv/myig/Library/AgeRanges"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="Measure/SimpleAgeGroup"/>
+      </reference>
+      <name value="Measure/SimpleAgeGroup"/>
+      <description value="A simple example showing how examples are defined and referenced"/>
+      <exampleCanonical value="http://somewhere.org/fhir/uv/myig/Measure/SimpleAgeGroup"/>
+    </resource>
+    
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
