@@ -13,7 +13,7 @@ Alias: $measure-population = http://terminology.hl7.org/CodeSystem/measure-popul
 Instance: SimpleAgeGroup
 InstanceOf: Measure
 Title: "SimpleAgeGroup"
-Description: "HIVSimpleAgeGroup"
+Description: "SimpleAgeGroup"
 * identifier.system = "http://somewhere.org/fhir/uv/mycontentig/Measure"
 * version = "0.0.0"
 * status = #draft
@@ -21,7 +21,7 @@ Description: "HIVSimpleAgeGroup"
 * date = "2021-07-01"
 * publisher = "OpenHIE"
 * library[+] = Canonical(Test)
-* name = "HIVSimpleAgeGroup"
+* name = "SimpleAgeGroup"
 * url = "http://somewhere.org/fhir/uv/mycontentig/Measure/SimpleAgeGroup"
 * identifier.value = "SimpleAgeGroup"
 * scoring = $measure-scoring#proportion

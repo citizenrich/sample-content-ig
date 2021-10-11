@@ -13,7 +13,6 @@ InstanceOf: Bundle
 Title: "Example-Test"
 Description: "Example-Test"
 * type = #transaction
-
 * entry[+].fullUrl = "http://somewhere.org/fhir/uv/mycontentig/Patient/Patient-Test"
 * entry[=].request.url = "Patient"
 * entry[=].resource = Patient-Test

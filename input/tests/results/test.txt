@@ -23,3 +23,17 @@ Age Group=Code { code: P35Y--P40Y, system: http://ohie.org/CodeSystem/iso-8601-d
 
 elapsed: 0.261 seconds
 
+Running tests.
+Data path: /Users/richard/src/github.com/citizenrich/sample-content-ig/input/tests/Test
+Terminology path: /Users/richard/src/github.com/citizenrich/sample-content-ig/input/vocabulary/valueset
+Patient=Patient(id=Patient-Test)
+Gender=code
+Sex=female
+Initial Population=true
+Denominator=true
+Numerator=true
+Age Group/Sex=P35Y--P40Y:female
+Age Group=Code { code: P35Y--P40Y, system: http://ohie.org/CodeSystem/iso-8601-derived-periods, version: null, display: 35-39 year }
+
+elapsed: -0.461 seconds
+

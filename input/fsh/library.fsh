@@ -4,6 +4,7 @@ Instance: Test
 InstanceOf: Library
 Title: "Test"
 Description: "Test"
+* name = "Test"
 * status = #draft
 * experimental = true
 * type = $library-type#logic-library
@@ -16,6 +17,7 @@ Instance: FHIRHelpers
 InstanceOf: Library
 Title: "FHIRHelpers"
 Description: "FHIRHelpers"
+* name = "Test"
 * status = #draft
 * experimental = true
 * type = $library-type#logic-library
@@ -28,6 +30,7 @@ Instance: AgeRanges
 InstanceOf: Library
 Title: "AgeRanges"
 Description: "AgeRanges"
+* name = "Test"
 * status = #draft
 * experimental = true
 * type = $library-type#logic-library
