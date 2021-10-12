@@ -32,21 +32,11 @@ Description: "SimpleAgeGroup"
     * code = $measure-population#initial-population
     * criteria.language = #text/cql
     * criteria.expression = "Initial Population"
-  * stratifier[0].criteria.language = #text/cql
-  * stratifier[=].criteria.expression = "Age Group"
-
-* group[+]
-  * code = $OpenHIE#cohort "cohort"
   * population[+]
     * description = "Denominator"
     * code = $measure-population#denominator
     * criteria.language = #text/cql
     * criteria.expression = "Denominator"
-  * stratifier[0].criteria.language = #text/cql
-  * stratifier[=].criteria.expression = "Age Group"
-
-* group[+]
-  * code = $OpenHIE#cohort "cohort"
   * population[+]
     * description = "Numerator"
     * code = $measure-population#numerator

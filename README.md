@@ -31,8 +31,7 @@ bash _updatePublisher.sh
 
 Steps:
 ```sh
-# remove if they exist
-rm input/resources/Library-AgeRanges.json input/resources/Library-FHIRHelpers.json input/resources/Library-Test.json
+rm input/resources/Library-*
 sushi
 mv fsh-generated/resources/Library-* input/resources/
 bash _refresh.sh
@@ -48,20 +47,21 @@ curl -X PUT -H "Content-Type: application/fhir+json" --data @Library-FHIR-ModelI
 
 ```sh
 cd output ; for FILE in FHIRHelpers AgeRanges Test \
-; do curl -X PUT -H "Content-Type: application/fhir+json" --data @Library-${FILE}.json http://localhost:8080/cqf-ruler-r4/fhir/Library/${FILE} ; done ; cd ../
+; do curl -X PUT -H "Content-Type: application/fhir+json" --data @Library-${FILE}.json http://localhost:8080/cqf-ruler-r4/fhir/Library/${FILE} | jq . ; done ; cd ../
 ```
 
 ```sh
 cd output ; for FILE in SimpleAgeGroup \
-; do curl -X PUT -H "Content-Type: application/fhir+json" --data @Measure-${FILE}.json http://localhost:8080/cqf-ruler-r4/fhir/Measure/${FILE} ; done ; cd ..
+; do curl -X PUT -H "Content-Type: application/fhir+json" --data @Measure-${FILE}.json http://localhost:8080/cqf-ruler-r4/fhir/Measure/${FILE} | jq . ; done ; cd ..
 ```
 
 ```sh
-cat output/Bundle-Example-Test.json | curl -X POST -H "Content-Type: application/fhir+json" --data-binary @- http://localhost:8080/cqf-ruler-r4/fhir
+cat output/Bundle-Example-Test.json | curl -X POST -H "Content-Type: application/fhir+json" --data-binary @- http://localhost:8080/cqf-ruler-r4/fhir | jq .
 ```
 
 Run $evaluate-measure operations
-```
-curl -sXPOST 'http://localhost:8080/cqf-ruler-r4/fhir/Measure/SimpleAgeGroup/$evaluate-measure?&periodStart=1970&periodEnd=2021' | jq
+```sh
+curl 'http://localhost:8080/cqf-ruler-r4/fhir/Measure/SimpleAgeGroup/$evaluate-measure?&periodStart=1970&periodEnd=2021' | jq .
+# curl -sXPOST 'http://localhost:8080/cqf-ruler-r4/fhir/Measure/SimpleAgeGroup/$evaluate-measure?&periodStart=1970&periodEnd=2021' | jq
 ```
 
