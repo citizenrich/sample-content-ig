@@ -62,6 +62,5 @@ cat output/Bundle-Example-Test.json | curl -X POST -H "Content-Type: application
 Run $evaluate-measure operations
 ```sh
 curl 'http://localhost:8080/cqf-ruler-r4/fhir/Measure/SimpleAgeGroup/$evaluate-measure?&periodStart=1970&periodEnd=2021' | jq .
-# curl -sXPOST 'http://localhost:8080/cqf-ruler-r4/fhir/Measure/SimpleAgeGroup/$evaluate-measure?&periodStart=1970&periodEnd=2021' | jq
 ```
 
